@@ -1,0 +1,61 @@
+.item-image{
+    max-width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
+.main-image{
+    width: 100%; 
+    height: 100%;
+}
+
+.main-image-blur{
+    width: 100%; 
+    height: 100%;
+    filter: blur(5px);
+    transition: 0.5s;
+}
+.button-like{
+    width: 3%;
+    height: 5%;
+    border-radius: 10%;
+    background-image: url('../../assets/heart.png');
+    background-color: #fff;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+    flex: 1;
+}
+.button-download{
+    width: 3%;
+    height: 4%;
+    border-radius: 10%;
+    background-image: url('../../assets/download.png');
+    background-color: #fff;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 25%;
+    margin-top: 10px;
+    margin-right: 10px;
+    flex: 1;
+    cursor: pointer;
+}
+.button-download:hover{
+    background-color: #767676;
+}
+.container-button{
+    display: flex;
+    justify-content: flex-end;
+
+}
+/* .item-image{
+    display: grid;
+    grid-template-columns: minmax(0,1fr);
+    row-gap: var(--row-gutter);
+} */
