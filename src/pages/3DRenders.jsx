@@ -5,13 +5,13 @@ import Layout from '../components/Layout/Layout';
 import ImageGrid from '../components/ImageGrid/ImageGrid';
 import './PageStyles.css';
 
-const TexturesPatterns = () => {
+const ThreeDRenders = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const itemsPerPage = 12;
-  const api = LINK_API + '/topics/textures-patterns/photos' + '?client_id=' + PUBLIC_KEY + '&per_page=' + itemsPerPage + '&page=' + currentPage;
+  const api = LINK_API + '/topics/3d-renders/photos' + '?client_id=' + PUBLIC_KEY + '&per_page=' + itemsPerPage + '&page=' + currentPage;
 
   const fetchData = (page) => {
     setLoading(true);
@@ -43,8 +43,8 @@ const TexturesPatterns = () => {
 
   return (
     <Layout 
-      title="Textures & Patterns"
-      description="Discover fascinating visual patterns and textures from both natural and man-made sources."
+      title="3D Renders"
+      description="Explore stunning computer-generated imagery and digital art that pushes the boundaries of creativity."
     >
       <ImageGrid images={data} loading={loading} />
       
@@ -75,4 +75,4 @@ const TexturesPatterns = () => {
   );
 };
 
-export default TexturesPatterns;
+export default ThreeDRenders; 
